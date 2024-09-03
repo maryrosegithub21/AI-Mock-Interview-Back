@@ -96,13 +96,10 @@ curl -X POST http://localhost:3002/api/interview \
 }'
 
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
 Acknowledgements
 Google Generative AI SDK
 Express.js
 dotenv
 body-parser
 
-Feel free to customize this README file further based on your specific ne
+Feel free to customize this README file further based on your specific needs and project details.
