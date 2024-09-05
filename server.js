@@ -5,14 +5,17 @@
 //  */
 
 require('dotenv').config();
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 
+
+
 const app = express();
 const port = 3002; // Ensure this matches the port you intend to use
 
-const apiKey = process.env.API_KEY;
+const apiKey = process.env.API_KEY; // this is the key from the aistudio
 const genAI = new GoogleGenerativeAI(apiKey);
 
 const generationConfig = {
@@ -65,3 +68,5 @@ app.post('/api/interview', async (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
+
+
