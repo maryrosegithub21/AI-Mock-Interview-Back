@@ -1,0 +1,8 @@
+runtime: nodejs16
+
+env_variables:
+  API_KEY: your_google_generative_ai_api_key
+
+handlers:
+- url: /.*
+  script: auto
