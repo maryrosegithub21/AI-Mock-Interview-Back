@@ -1,5 +1,13 @@
 runtime: nodejs20
+service: default
+instance_class: F1
+automatic_scaling:
+  min_instances: 1
+  max_instances: 3
+  target_cpu_utilization: 0.6
 
 handlers:
-- url: /.*
-  script: auto
+  - url: /.*
+    script: auto
+
+service_account: interviewback@interviewpracticeback.iam.gserviceaccount.com
